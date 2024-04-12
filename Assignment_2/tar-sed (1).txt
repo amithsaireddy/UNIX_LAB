@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "** Creating a compressed archive:**"
+tar -czvf cmp_archive.tar.gz .
+
+echo "\n** Listing the contents of an archive:**"
+tar -tvf cmp_archive.tar.gz
+
+mkdir cmp_archive_extracted
+
+echo "\n** Extracting an archive:**"
+tar -xvf cmp_archive.tar.gz -C cmp_archive_extracted

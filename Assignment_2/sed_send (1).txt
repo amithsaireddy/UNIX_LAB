@@ -1,0 +1,20 @@
+#!/bin/bash
+sed 's/s05/51/' file1.txt
+echo ""
+
+sed '2d' file1.txt
+echo ""
+
+sed 's/21/25/' file1.txt
+echo ""
+
+sed '$d' file1.txt
+echo ""
+
+sed '2,4d' file1.txt
+echo ""
+
+sed '5,$d' file1.txt
+echo ""
+
+sed '/22/d' file1.txt

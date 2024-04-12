@@ -1,0 +1,32 @@
+#!/bin/bash
+
+echo -e "file1.txt\n"
+cat file1.txt
+echo ""
+
+echo -e "printing 2 and 3 column using awk\n"
+awk '{ print $2 " " $3 }' file1.txt
+echo ""
+
+echo -e "printing records starting with s0 and ending with 21\n"
+awk '/^s0.*21$/{print}' file1.txt
+echo ""
+
+echo -e "printing sum of values in field 3\n"
+awk '{ sum += $3 } END {printf "Sum= %d \nAverage= %.2f \n", sum, sum/NR}' file1.txt
+echo ""
+
+#print substring containing last 2 letters of field 1
+echo -e "print substring containing last 2 letters of field 1\n"
+awk '{ print substr($1, 2, 3) }' file1.txt
+echo ""
+
+#print junior if 3rd column less than equal to 15000
+echo -e "print junior if 3rd column less than equal to 15000"
+awk '{ if ($3 > 15000) { print $1 " senior" } else { print $1 " junior" } }' file1.txt
+echo ""
+
+#print squares of the numbers in field 4
+echo -e "print squares of the numbers in field 4"
+awk 'function square(x) { return x*x } { print $4 " squared = " square($4) }' file1.txt
+echo ""

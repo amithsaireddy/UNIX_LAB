@@ -1,0 +1,11 @@
+week4_folder1/
+week4_folder1/file1.txt
+week4_folder1/file2.txt
+\n** Listing the contents of an archive:**
+drwxrwxr-x dellxp/dellxps   0 2024-03-05 21:53 week4_folder1/
+-rw-rw-r-- dellxp/dellxps  33 2024-03-05 21:53 week4_folder1/file1.txt
+-rw-rw-r-- dellxp/dellxps  48 2024-03-05 21:53 week4_folder1/file2.txt
+Extracting
+week4_folder1/
+week4_folder1/file1.txt
+week4_folder1/file2.txt

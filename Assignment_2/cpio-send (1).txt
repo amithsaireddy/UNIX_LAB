@@ -1,0 +1,9 @@
+#!/bin/bash
+
+ls | cpio -ov > ./cpio_archive.cpio
+
+cpio -iv < ./cpio_archive.cpio
+
+ls
+ls | cpio -ovH tar > ./cpio_archive.cpio
+ls
